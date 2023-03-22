@@ -1,9 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-import { Button } from "@/components/ui-kit/Button";
-import { Input } from "@/components/ui-kit/Input";
+import { SideBar } from "@/components/layouts/SideBar";
 
 export default function Home() {
   return (
@@ -14,24 +10,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
-      <Input
-        placeholder="hello"
-        type={"text"}
-        onChange={(e) => console.log(e)}
-        errorMessage={"Can't be empty"}
-      />
-      {/* <Button
-        children={"Hello"}
-        size={"small"}
-        backgroundColor={"primary"}
-        onClick={() => alert("hello world")}
-      />
-      <Button
-        children={"world"}
-        size={"large"}
-        backgroundColor={"tertiary"}
-        onClick={() => alert("world")}
-      /> */}
+      <SideBar />
     </>
   );
 }
